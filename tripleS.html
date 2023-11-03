@@ -1,0 +1,90 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>tripleS form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">tripleS Survey Form</h1>
+        <p id="description">Thank you for taking your time answering this survey</p>
+        <form method="post" action="." id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <label for="number" id="number-label">Age (optional)</label>
+                <input type="number" id="number" min="0" max="125" placeholder="Age">
+                <label for="referrer">How did you discover tripleS?
+                    <select name="referrer" id="dropdown">
+                        <option value="">Select an option</option>
+                        <option value="1">Friends</option>
+                        <option value="2">YouTube</option>
+                        <option value="3">Spotify</option>
+                        <option value="4">X (Twitter)</option>
+                        <option value="5">Instagram</option>
+                        <option value="6">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Would you recommend tripleS to a friend?</legend>
+                <label for="definitely"><input type="radio" id="definitely" name="nps" value="definitely" class="inline" checked> Definitely</label>
+                <label for="maybe"><input type="radio" id="maybe" name="nps" value="maybe" class="inline"> Maybe</label>
+                <label for="not-sure"><input type="radio" id="not-sure" name="nps" value="not-sure" class="inline"> Not sure</label>
+                <br>
+                <label for="bias">Who is your bias in tripleS?
+                    <select name="bias" id="selection">
+                        <option value="">Select your bias</option>
+                        <option value="1">S1 - Yoon Seoyeon</option>
+                        <option value="2">S2 - Jeong Hyerin</option>
+                        <option value="3">S3 - Lee Jiwoo</option>
+                        <option value="4">S4 - Kim Chaeyeon</option>
+                        <option value="5">S5 - Kim Yooyeon</option>
+                        <option value="6">S6 - Kim Soomin</option>
+                        <option value="7">S7 - Kim Nakyoung</option>
+                        <option value="8">S8 - Gong Yubin</option>
+                        <option value="9">S9 - Yamada Kaede</option>
+                        <option value="10">S10 - Seo Dahyun</option>
+                        <option value="11">S11 - Kamimoto Kotone</option>
+                        <option value="12">S12 - Kwak Yeonji</option>
+                        <option value="13">S13 - Hsü Nien-tz'u</option>
+                        <option value="14">S14 - Park Sohyun</option>
+                        <option value="15">S15 - Zhōu Xīnyǔ</option>
+                        <option value="16">S16 - Kouma Mayu</option>
+                    </select>
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>What is your dream lineup for a future tripleS unit?</legend>
+                <label for="S1"><input type="checkbox" id="S1" name="lineup" value="S1" class="inline"> S1 - Yoon Seoyeon</label>
+                <label for="S2"><input type="checkbox" id="S2" name="lineup" value="S2" class="inline"> S2 - Jeong Hyerin</label>
+                <label for="S3"><input type="checkbox" id="S3" name="lineup" value="S3" class="inline"> S3 - Lee Jiwoo</label>
+                <label for="S4"><input type="checkbox" id="S4" name="lineup" value="S4" class="inline"> S4 - Kim Chaeyeon</label>
+                <label for="S5"><input type="checkbox" id="S5" name="lineup" value="S5" class="inline"> S5 - Kim Yooyeon</label>
+                <label for="S6"><input type="checkbox" id="S6" name="lineup" value="S6" class="inline"> S6 - Kim Soomin</label>
+                <label for="S7"><input type="checkbox" id="S7" name="lineup" value="S7" class="inline"> S7 - Kim Nakyoung</label>
+                <label for="S8"><input type="checkbox" id="S8" name="lineup" value="S8" class="inline"> S8 - Gong Yubin</label>
+                <label for="S9"><input type="checkbox" id="S9" name="lineup" value="S9" class="inline"> S9 - Yamada Kaede</label>
+                <label for="S10"><input type="checkbox" id="S10" name="lineup" value="S10" class="inline"> S10 - Seo Dahyun</label>
+                <label for="S11"><input type="checkbox" id="S11" name="lineup" value="S11" class="inline"> S11 - Kamimoto Kotone</label>
+                <label for="S12"><input type="checkbox" id="S12" name="lineup" value="S12" class="inline"> S12 - Kwak Yeonji</label>
+                <label for="S13"><input type="checkbox" id="S13" name="lineup" value="S13" class="inline"> S13 - Hsü Nien-tz'u</label>
+                <label for="S14"><input type="checkbox" id="S14" name="lineup" value="S14" class="inline"> S14 - Park Sohyun</label>
+                <label for="S15"><input type="checkbox" id="S15" name="lineup" value="S15" class="inline"> S15 - Zhōu Xīnyǔ</label>
+                <label for="S16"><input type="checkbox" id="S16" name="lineup" value="S16" class="inline"> S16 - Kouma Mayu</label>
+            </fieldset>
+
+            <fieldset>
+                <label for="comment">Who would you like to see as S17-S24 and why?
+                    <textarea name="comment" id="comment" cols="30" rows="8" placeholder="I would like to see Kim Garam debut as S17 because she is innocent! I also think Guinn Myah would be a good choice for S18..."></textarea>
+                </label>
+            </fieldset>
+            
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </body>
+</html>
